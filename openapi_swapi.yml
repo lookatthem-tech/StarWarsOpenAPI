@@ -3,7 +3,7 @@ info:
   description: The Star Wars API is the world's first quantified and programmatically-formatted set of Star Wars data.
   title: Star Wars API
   version: "1.0.0"
-  termsOfService: 'https://swapi.co/about'
+  termsOfService: 'https://swapi.dev/about'
   contact:
     name: not sure
     url: not sure
@@ -27,7 +27,7 @@ paths:
           description: OK
           schema:
             $ref: '#/definitions/Planet'
-            # $ref: 'http://swapi.co/api/planets/schema'
+            # $ref: 'http://swapi.dev/api/planets/schema'
         404:
           description: NOT FOUND
 definitions:

@@ -35,8 +35,8 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/definitions/Planet'
-                # $ref: 'http://swapi.co/api/planets/schema'
+                $ref: '#/definitions/Films'
+                # $ref: 'http://swapi.co/api/films/schema'
         "404":
           description: "NOT FOUND"
           content:

@@ -19,8 +19,9 @@ paths:
   /planets/{id}:
     get:
       tags:
-      description: "Get a specific planets resource."
       summary: "Get a specific planets resource."
+      description: "Get a specific planets resource."
+      operationId: 
       parameters:
         - name: id
           in: path
@@ -29,11 +30,11 @@ paths:
           type: integer
           format: int64
       responses:
-        200:
-          description: "OK"
+        "200":
+          description: Successful response
           schema:
             $ref: 'http://swapi.dev/api/planets/schema'
-        404:
+        "404":
           description: "NOT FOUND"
 definitions:
   Planet:

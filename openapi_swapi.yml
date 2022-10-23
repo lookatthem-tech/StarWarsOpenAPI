@@ -1,7 +1,7 @@
 openapi: "3.0.2"
 info:
   title: "SWAPI Star Wars API"
-  description: "Ryan says star wars api"
+  description: "Documentation for the Star Wars API"
   version: "1.0.0"
   termsOfService: "https://swapi.dev/about"
   contact:

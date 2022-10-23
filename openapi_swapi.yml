@@ -31,7 +31,7 @@ paths:
           format: int64
       responses:
         "200":
-          description: Successful response
+          description: OK
           content:
             application/json:
               schema:

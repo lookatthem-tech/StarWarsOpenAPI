@@ -42,7 +42,7 @@ paths:
           content:
             text/plain:
               schema:
-                title: Weather not found
+                title: NOT FOUND
                 type: string
                 example: Not found
 definitions:

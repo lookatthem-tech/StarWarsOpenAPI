@@ -56,7 +56,7 @@ definitions:
         description: "The climate of this planet. Comma separated if diverse."
       gravity:
         type: string
-        description: "A number denoting the gravity of this planet, where "1" is normal or 1 standard G. "2" is twice or 2 standard Gs. "0.5" is half or 0.5 standard Gs."
+        description: "A number denoting the gravity of this planet, where 1 is normal or 1 standard G. 2 is twice or 2 standard Gs. 0.5 is half or 0.5 standard Gs."
       terrain:
         type: string
         description: "The terrain of this planet. Comma separated if diverse."

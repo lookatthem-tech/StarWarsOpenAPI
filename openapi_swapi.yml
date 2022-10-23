@@ -1,4 +1,4 @@
-openapi: "3.0.2"
+swagger: '2.0'
 info:
   description: The Star Wars API is the world's first quantified and programmatically-formatted set of Star Wars data.
   title: Star Wars API

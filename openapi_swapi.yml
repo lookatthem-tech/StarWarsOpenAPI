@@ -1,4 +1,4 @@
-openapi: "3.0.0"
+openapi: "3.0.2"
 info:
   title: "SWAPI Star Wars API"
   description: "Ryan says star wars api"

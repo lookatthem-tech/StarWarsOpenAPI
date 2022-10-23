@@ -32,10 +32,16 @@ paths:
       responses:
         "200":
           description: Successful response
-          schema:
-            $ref: 'http://swapi.dev/api/planets/schema'
+          content:
+            application/json:
+              schema:
+                $ref: 'http://swapi.dev/api/planets/schema'
         "404":
           description: "NOT FOUND"
+          content:
+            application/json:
+              schema:
+                $ref: 'http://swapi.dev/api/planets/schema'
 definitions:
   Planet:
     type: object

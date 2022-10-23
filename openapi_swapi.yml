@@ -31,8 +31,7 @@ paths:
         200:
           description: "OK"
           schema:
-            $ref: '#/definitions/Planet'
-            # $ref: 'http://swapi.dev/api/planets/schema'
+            $ref: 'http://swapi.dev/api/planets/schema'
         404:
           description: "NOT FOUND"
 definitions:

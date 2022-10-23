@@ -18,6 +18,7 @@ servers:
 paths:
   /planets/{id}:
     get:
+      tags:
       description: "Get a specific planets resource."
       summary: "Get a specific planets resource."
       parameters:

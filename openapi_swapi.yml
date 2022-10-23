@@ -96,3 +96,98 @@ definitions:
       population: "200000"
       created: "2014-12-09T13:50:49.641000Z"
       updated: "2014-12-21T20:48:04.175778Z"
+
+
+paths:
+  /films/{id}:
+    get:
+      tags:
+      summary: "Get a specific film."
+      description: "Get a specific film."
+      operationId: 
+      parameters:
+        - name: id
+          in: path
+          description: "ID of film."
+          required: true
+          type: integer
+          format: int64
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/definitions/Planet'
+                # $ref: 'http://swapi.co/api/planets/schema'
+        "404":
+          description: "NOT FOUND"
+          content:
+            text/plain:
+              schema:
+                title: NOT FOUND
+                type: string
+                example: Not found
+definitions:
+  Films:
+    type: object
+    properties:
+      title:
+        type: string
+        description: "The title of this film."
+      episode:
+        type: integer
+        description: "The episode number of this film."  
+      opening_crawl:
+        type: string
+        description: "The opening paragraphs at the beginning of this film."
+      director:
+        type: string
+        description: "The name of the director of this film."
+      producer:
+        type: string
+        description: "The name(s) of the producer(s) of this film. Comma separated."
+      release_date:
+        type: string
+        description: "The ISO 8601 date format of film release at original creator country."
+      species:
+        type: array
+        description: "An array of species resource URLs that are in this film."
+      starships:
+        type: array
+        description: "An array of starship resource URLs that are in this film."
+      vehicles:
+        type: array
+        description: "An array of vehicle resource URLs that are in this film."
+      characters:
+        type: array
+        description: "An array of people resource URLs that are in this film."
+      planets:
+        type: array
+        description: "An array of planet resource URLs that are in this film."
+      url:
+        type: string
+        description: "The URL of this resource."
+      created:
+        type: string
+        description: "The ISO 8601 date format of the time that this resource was created."
+      edited:
+        type: string
+        description: "The ISO 8601 date format of the time that this resource was edited."
+    example:
+      title: "A New Hope"
+      episode: "4"
+      opening_crawl: "It is a period of civil war.\n\nRebel spaceships, striking\n\nfrom a hidden base, have won\n\ntheir first victory against\n\nthe evil Galactic Empire.\n\n\n\nDuring the battle, Rebel\n\nspies managed to steal secret\r\nplans to the Empire's\n\nultimate weapon, the DEATH\n\nSTAR, an armored space\n\nstation with enough power\n\nto destroy an entire planet.\n\n\n\nPursued by the Empire's\n\nsinister agents, Princess\n\nLeia races home aboard her\n\nstarship, custodian of the\n\nstolen plans that can save her\n\npeople and restore\n\nfreedom to the galaxy...."
+      director: "George Lucas"
+      producer: "Gary Kurtz, Rick McCallum"
+      release_date: "1977-05-25"
+      species: "https://swapi.dev/api/species/1/"
+      starships: "https://swapi.dev/api/starships/2/"
+      vehicles: "https://swapi.dev/api/vehicles/4/"
+      characters: "https://swapi.dev/api/people/1/"
+      planets: "https://swapi.dev/api/planets/1/"
+      url: "https://swapi.dev/api/films/1/"
+      created: "2014-12-10T14:23:31.880000Z"
+      edited: "2014-12-12T11:24:39.858000Z"
+
+

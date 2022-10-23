@@ -3,7 +3,7 @@ info:
   title: "SWAPI Star Wars API"
   description: "Ryan says star wars api"
   version: "1.0.0"
-  termsOfService: 'https://swapi.dev/about'
+  termsOfService: "https://swapi.dev/about"
   contact:
     name: "Star Wars API SWAPI"
     url: "https://swapi.dev/api"
@@ -18,62 +18,62 @@ servers:
 paths:
   /planets/{id}:
     get:
-      description: Get a specific planets resource.
-      summary: Get a specific planets resource.
+      description: "Get a specific planets resource."
+      summary: "Get a specific planets resource."
       parameters:
         - name: id
           in: path
-          description: ID of planet.
+          description: "ID of planet."
           required: true
           type: integer
           format: int64
       responses:
         200:
-          description: OK
+          description: "OK"
           schema:
             $ref: '#/definitions/Planet'
             # $ref: 'http://swapi.dev/api/planets/schema'
         404:
-          description: NOT FOUND
+          description: "NOT FOUND"
 definitions:
   Planet:
     type: object
     properties:
       name:
         type: string
-        description: The name of this planet.
+        description: "The name of this planet."
       diameter:
         type: string
-        description: The diameter of this planet in kilometers.  
+        description: "The diameter of this planet in kilometers."  
       rotation_period:
         type: string
-        description: The number of standard hours it takes for this planet to complete a single rotation on its axis.
+        description: "The number of standard hours it takes for this planet to complete a single rotation on its axis."
       orbital_period:
         type: string
-        description: The number of standard days it takes for this planet to complete a single orbit of its local star.
+        description: "The number of standard days it takes for this planet to complete a single orbit of its local star."
       climate:
         type: string
-        description: The climate of this planet. Comma separated if diverse.
+        description: "The climate of this planet. Comma separated if diverse."
       gravity:
         type: string
-        description: A number denoting the gravity of this planet, where "1" is normal or 1 standard G. "2" is twice or 2 standard Gs. "0.5" is half or 0.5 standard Gs.
+        description: "A number denoting the gravity of this planet, where "1" is normal or 1 standard G. "2" is twice or 2 standard Gs. "0.5" is half or 0.5 standard Gs."
       terrain:
         type: string
-        description: The terrain of this planet. Comma separated if diverse.
+        description: "The terrain of this planet. Comma separated if diverse."
       surface_water:
         type: string
-        description: The percentage of the planet surface that is naturally occurring water or bodies of water.
+        description: "The percentage of the planet surface that is naturally occurring water or bodies of water."
       population:
         type: string
-        description: The average population of sentient beings inhabiting this planet.
+        description: "The average population of sentient beings inhabiting this planet."
       created:
         type: string
         format: date-time
-        description: The ISO 8601 date format of the time that this resource was created.
+        description: "The ISO 8601 date format of the time that this resource was created."
       updated:
         type: string
         format: date-time
-        description: The ISO 8601 date format of the time that this resource was edited.
+        description: "The ISO 8601 date format of the time that this resource was edited."
     example:
       name: "Tatooine"
       diameter: "10465"
